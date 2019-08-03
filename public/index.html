@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>POST</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+</head>
+
+<body>
+  <h1>Data Weather Location</h1>
+  <p>
+    latitude: <span id="lat"></span>
+    <br>
+    longitude: <span id="lng"></span>
+  </p>
+  <hr>
+  <p id="no-read">The weather here is <span><strong id="sum"></strong></span>, with temperature <span
+      id="tmp"></span>&deg; C. And
+    last concentration of particulate matter (<span id="param"></span>) is <span id="val"></span> <span
+      id="unit"></span>.
+  </p>
+  <div>
+    <button id="refresh" onclick="getLoc()">refresh</button> <button id="submit" onclick="postLoc()">submit</button>
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
